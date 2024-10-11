@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: courier;
+}
+
+.wrapper {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.item-info,
+.cust-info,
+.footer {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 0.5rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  text-align: left;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+.footer {
+  margin-top: 40px;
+}
+
+table {
+  font-size: 14px;
+}
+
+button {
+  padding: 8px 10px;
+  width: 100px;
+  background: #f1f3f4;
+  border-radius: 3px;
+  border: none;
+  margin: 10px;
+}
+
+.signature-keys {
+  padding-bottom: 20px;
+}
+
+.space-top {
+  margin-top: 40px;
+}

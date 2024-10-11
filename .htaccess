@@ -1,0 +1,17 @@
+
+RewriteOptions inherit
+Options -Indexes
+ErrorDocument 404 /Page-Not-Found.html
+ErrorDocument 403 /Page-Not-Found.html
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteRule ^api/students/?$ api/app.php
+RewriteRule ^api/students/([0-9]+)?$ api/app.php?id=$1
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^shop\.jasonvision\.co\.tz$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.shop\.jasonvision\.co\.tz$
+RewriteRule ^/?$ "https\:\/\/shop\.jasonvision\.co\.tz\/" [R=301,L]
