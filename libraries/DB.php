@@ -11,8 +11,8 @@ class DB
 
     private function __construct()
     {
-        // $this->conn = new mysqli('localhost', 'jvteppwq_shop', 'Jason2024', 'jvteppwq_shop');
-        $this->conn = new mysqli('localhost', 'root', '', 'jvteppwq_shop');
+        $this->conn = new mysqli('localhost', 'jvteppwq_shop', 'Jason2024', 'jvteppwq_shop');
+        // $this->conn = new mysqli('localhost', 'root', '', 'jvteppwq_shop');
         if ($this->conn->connect_error) {
             die("Connection failed: " . $this->conn->connect_error);
         }
